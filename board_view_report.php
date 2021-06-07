@@ -27,7 +27,7 @@
 			}
 		</style>
 	</head>
-	<body> 
+	<body class="index_body"> 
 		<header>
 			<?php include "header.php";?>
 		</header>  

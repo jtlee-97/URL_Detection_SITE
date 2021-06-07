@@ -12,14 +12,17 @@
         <script type="text/javascript" src="./js/login.js"></script>
     </head>
 
-    <body>
+    <body class="index_body">
         <header>
             <?php include "header.php";?>
         </header>
         
         <section>
             <div class = "area">
-                <h1>MyPage</h1>
+                <p></p>
+                <h2 style='color : rgba(161, 202, 67, 0.664); text-align:center; font-size:60px;'>마이 페이지</h2>
+                <p></p>
+                <p></p>
                 <div class = "area_area">
                     <?php
                         if(!$userid) {
@@ -33,11 +36,9 @@
                     <?php
                         }
                     ?>
-
-                    <!-- Main Contents 시작 -->
-                    
-                    <!-- Main Contents 종료 -->
                 </div>
+                <p></p>
+                <p></p>
             </div>
         </section>
         

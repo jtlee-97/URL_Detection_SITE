@@ -3,6 +3,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./css/mypage_else.css">
         <link rel="stylesheet" type="text/css" href="./css/mypage.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
         <style>
             .tables {
                 border-top : 1px solid #444444;
@@ -38,8 +41,16 @@
                 height: 80%;
                 margin: 20px;
                 color: white;
-                background-color : rgb(83, 30, 30);
-                box-shadow: 0px 7px 10px rgba(229, 211, 46, 0.4);
+                background-color : rgb(50, 50, 60, 0.425);
+                box-shadow: 0px 7px 10px rgba(150, 150, 150, 0.4);
+                border-radius : 2em;
+            }
+            .areas2 {
+                height: 80%;
+                margin: 20px;
+                color: white;
+                background-color : rgb(50, 50, 60, 0.125);
+                border-radius : 10px;
             }
         </style>
 
@@ -88,7 +99,7 @@
         </script>
     </head>
 
-    <body>
+    <body class="index_body">
         <header>
             <?php include "header.php";?>
         </header>
@@ -99,10 +110,11 @@
 
         <section>
             <div class = "area">
-                <h1> 개인정보 수정 </h1>
+                <h2 style='color : rgba(161, 202, 67, 0.664); text-align:center; font-size:60px;'>개인정보수정</h2>
                 <div class = "area_area">
+
                     <div class = "areas">
-                     <form  name="member_form" method="post" action="member_modify.php">
+                        <form  name="member_form" method="post" action="member_modify.php">
                             <input type="hidden" name="id" value="<?php echo $userid;?>"/> <!--POST 방식으로 userid 값 전달-->
                             <table class="tabless">
                                 <th class="th_header">
@@ -114,33 +126,30 @@
                             </table>
 
                             <table class="tables">
-                                <th class="th_left" width="200">아&nbsp;&nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;&nbsp;&nbsp;디</th>
-                                <th class="th_right_id"><?=$userid?></th>
+                                <th class="th_left" width="200"><h4 style='color: rgba(220, 220, 220, 0.766); text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>아 이 디</h4></td>
+                                <th class="th_right_id" style='font-family: "Sunflower"; text-align: left; padding-left:30px;'><?=$userid?></th>
                             </table>
 
                             <table class="tabless">
-                                <th class="th_left" width="200">비&nbsp;&nbsp;밀&nbsp;&nbsp;번&nbsp;&nbsp;호</th>
+                                <th class="th_left" width="200"><h4 style='color: rgba(220, 220, 220, 0.766); text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>비밀 번호</h4></td>
                                 <th class="th_right"><input class="inputs" type="password" name="pass" style="color:wheat;"></th>
                             </table>
                             <table class="tabless">
-                                <th class="th_left" width="200">비밀번호 확인</th>
+                                <th class="th_left" width="200"><h4 style='color: rgba(220, 220, 220, 0.766); text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>비밀번호 확인</h4></td>
                                 <th class="th_right"><input class="inputs" type="password" name="pass_confirm" style="color:wheat;"></th>
                             </table>
                             <table class="tabless">
-                                <th class="th_left" width="200">이&nbsp;&nbsp;&nbsp;&nbsp;메&nbsp;&nbsp;&nbsp;&nbsp;일</th>
-                                <th class="th_right"> <input class="inputs" type="text" name="email1" style="color:wheat;">
+                                <th class="th_left" width="200"><h4 style='color: rgba(220, 220, 220, 0.766); text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>이 메 일</h4></td>
+                                <th class="th_right" style='font-family: "Sunflower";'> <input class="inputs" type="text" name="email1" style="color:wheat;">
                                         @
                                         <input class="inputs" type="text" name="email2" style="color:wheat;">
                                 </th>
                             </table>
-                            <!--&nbsp;
-                            <button class="button" onclick="reset_form_modify()">취소하기</button>-->
                         </form>
+                        <div class="areas2">
+                            <button class="button_logout" onclick="location.href='logout.php' ">LOGOUT</button>
+                        </div>
                     </div>
-                    
-                </div>
-                <div class="area_area">
-                        <button class="button_logout" onclick="location.href='logout.php' ">LOGOUT</button>
                 </div>
             </div>
         </section>

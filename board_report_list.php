@@ -2,6 +2,9 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./css/board.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
         <style>
             li {
                 list-style:none;
@@ -23,7 +26,7 @@
         </style>
     </head>
 
-    <body>
+    <body class="index_body">
         <header>
             <?php include "header.php";?>
         </header>
@@ -31,8 +34,10 @@
         <section>
             <div class="area">
                 <div class="area_area">
-                    <h3>신고 목록</h3>
-                    <table>
+                    <h3 style='color : rgba(161, 202, 67, 0.664); text-align:center;'>신고 목록</h3>
+                    <p></p>
+                    <p></p>
+                    <table style='border: 3px solid #444444; border-color: rgba(200, 200, 200, 0.7); border-radius : 10px;'>
                         <colgroup> <!--table 너비를 조정-->
                             <col width="10%" />
                             <col width="40%" />
@@ -41,11 +46,11 @@
                             <col width="10%" />
                         </colgroup>
                         
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>글쓴이</th>
-                        <th>등록일</th>
-                        <th>조회</th>
+                        <th style='font-size: 23px; text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>번호</th>
+                        <th style='font-size: 23px; text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>제목</th>
+                        <th style='font-size: 23px; text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>글쓴이</th>
+                        <th style='font-size: 23px; text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>등록일</th>
+                        <th style='font-size: 23px; text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>조회</th>
                     </table>
 
                     <?php
@@ -84,7 +89,7 @@
                         $regist_day  = $row["regist_day"];
                         $hit         = $row["hit"];
                     ?>
-                                    <table>
+                                    <table style='border-bottom: 2px solid #444444; border-color: rgba(200, 200, 200, 0.4); border-radius : 10px;'>
                                         <colgroup> <!--table 너비를 조정-->
                                             <col width="10%" />
                                             <col width="40%" />
@@ -93,11 +98,11 @@
                                             <col width="10%" />
                                         </colgroup>
                                         
-                                        <th><?=$number?></th>
-                                        <th><a href="board_view_report.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></th>
-                                        <th><?=$id?></th>
-                                        <th><?=$regist_day?></th>
-                                        <th><?=$hit?></th>
+                                        <th style='border-right: 2px solid #444444; border-left: 2px solid #444444; border-color: rgba(200, 200, 200, 0.25);'><?=$number?></th>
+                                        <th style='border-right: 2px solid #444444; border-color: rgba(200, 200, 200, 0.25);'><a style='font-family: "Sunflower", sans-serif; text-decoration: none;' href="board_view_report.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></th>
+                                        <th style='border-right: 2px solid #444444; border-color: rgba(200, 200, 200, 0.25);'><?=$id?></th>
+                                        <th style='border-right: 2px solid #444444; border-color: rgba(200, 200, 200, 0.25);'><?=$regist_day?></th>
+                                        <th style='border-right: 2px solid #444444; border-color: rgba(200, 200, 200, 0.25);'><?=$hit?></th>
                                     </table>
                     <?php
                         $number--;

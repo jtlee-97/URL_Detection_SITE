@@ -2,7 +2,6 @@
 <html>
 	<head> 
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="./css/common.css">
 		<link rel="stylesheet" type="text/css" href="./css/board.css">
 		<style>
 			.area_view {
@@ -27,7 +26,7 @@
 			}
 		</style>
 	</head>
-	<body> 
+	<body class="index_body"> 
 		<header>
 			<?php include "header.php";?>
 		</header>  

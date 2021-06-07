@@ -2,6 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Gothic+Coding&family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <style>
             @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
             table {
@@ -9,14 +11,14 @@
                 /*border: 1px solid #444444;
                 border-color: white;*/
             }
-            p, li {
+            li {
                 font-family : 'Nanum Pen Script', cursive;
                 text-align : center;
                 font-size : 25px;
                 text-shadow: 2px 2px 2px gray;
             }
             h3{
-                font-family : 'Nanum Pen Script', cursive;
+                font-family: 'Nanum Gothic Coding', monospace;
                 text-align : center;
                 font-size : 30px;
                 text-shadow: 2px 2px 2px gray;
@@ -32,8 +34,8 @@
                 list-style-type: none;
             }
             h2{
-                font-family : 'Nanum Pen Script', cursive;
-                color : rgb(102, 79, 156);
+                font-family: 'Nanum Gothic Coding', monospace;
+                color : #a0a0a0;
                 text-align : center;
                 font-size : 40px;
                 text-shadow: 2px 2px 2px gray;
@@ -62,8 +64,8 @@
                         </td>
                     </tr>
                 </table>
+                <h2>2021학년도 1학기 PHP WEB 프로그래밍</h2>
             </div>
         </div>
-        <h2>2021학년도 1학기 PHP WEB 프로그래밍</h3>
     </body>
 </html>

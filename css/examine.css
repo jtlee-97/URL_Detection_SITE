@@ -121,7 +121,7 @@ transition으로 효과를 설정
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
 input[type=text] {
     position: relative;

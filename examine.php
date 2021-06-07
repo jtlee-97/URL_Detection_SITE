@@ -13,7 +13,7 @@
         </style>
     </head>
 
-    <body>
+    <body class="index_body">
         <header>
             <?php include "header.php";?>
         </header>
@@ -22,7 +22,7 @@
             <div class = "area">
                 <div class = "area_area">
                     <!-- Main Contents 시작 -->
-                    <h3>악성 URL 검색하기</h3>
+                    <h2 style='color : rgba(161, 202, 67, 0.664); text-align:center; font-size:60px;'>악성 URL 검색하기</h2>
                     
                     <!--input 문자열 post로 result.php에 전송-->
                     <form name="url_form" method="post" action="result.php"> 
