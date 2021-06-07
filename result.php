@@ -117,20 +117,6 @@
                             <tr>
                                 <td><h4>URL IP주소 포함에 따른 검사결과</h4></td>
                                 <?php
-                                    if($result[0] == 1){
-                                        echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
-                                    }
-                                    if($result[0] == 0){
-                                        echo "<td><h4 style='color : rgb(255,255,51,0.724);'>의심</h4></td>";
-                                    }
-                                    if($result[0] == -1) {
-                                        echo "<td><h4 style='color : rgb(255,51,51,0.724);'>위험</h4></td>";
-                                    }
-                                ?>
-                            </tr>
-                            <tr>
-                                <td><h4>URL 길이에 따른 검사결과</h4></td>
-                                <?php
                                     if($result[1] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
                                     }
@@ -143,7 +129,7 @@
                                 ?>
                             </tr>
                             <tr>
-                                <td><h4>URL에 @가 포함되었는지에 따른 검사결과</h4></td>
+                                <td><h4>URL 길이에 따른 검사결과</h4></td>
                                 <?php
                                     if($result[2] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
@@ -157,7 +143,7 @@
                                 ?>
                             </tr>
                             <tr>
-                                <td><h4>URL에 -가 포함되었는지에 따른 검사결과</h4></td>
+                                <td><h4>URL에 @가 포함되었는지에 따른 검사결과</h4></td>
                                 <?php
                                     if($result[3] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
@@ -171,7 +157,7 @@
                                 ?>
                             </tr>
                             <tr>
-                                <td><h4>URL 내의 서브도메인 개수에 따른 검사결과</h4></td>
+                                <td><h4>URL에 -가 포함되었는지에 따른 검사결과</h4></td>
                                 <?php
                                     if($result[4] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
@@ -185,7 +171,7 @@
                                 ?>
                             </tr>
                             <tr>
-                                <td><h4>신뢰할 수 있는 ssl인증서에 따른 검사결과</h4></td>
+                                <td><h4>URL 내의 서브도메인 개수에 따른 검사결과</h4></td>
                                 <?php
                                     if($result[5] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
@@ -199,7 +185,7 @@
                                 ?>
                             </tr>
                             <tr>
-                                <td><h4>도메인 유효기간에 따른 검사결과</h4></td>
+                                <td><h4>신뢰할 수 있는 ssl인증서에 따른 검사결과</h4></td>
                                 <?php
                                     if($result[6] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
@@ -213,7 +199,7 @@
                                 ?>
                             </tr>
                             <tr>
-                                <td><h4>http:// 이후 //가 나오는지에 따른 검사결과</h4></td>
+                                <td><h4>도메인 유효기간에 따른 검사결과</h4></td>
                                 <?php
                                     if($result[7] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
@@ -227,7 +213,7 @@
                                 ?>
                             </tr>
                             <tr>
-                                <td><h4>비정상 포트에 따른 검사결과</h4></td>
+                                <td><h4>http:// 이후 //가 나오는지에 따른 검사결과</h4></td>
                                 <?php
                                     if($result[8] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
@@ -241,7 +227,7 @@
                                 ?>
                             </tr>
                             <tr>
-                                <td><h4>트래픽 확인에 따른 검사결과</h4></td>
+                                <td><h4>비정상 포트에 따른 검사결과</h4></td>
                                 <?php
                                     if($result[9] == 1){
                                         echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
@@ -250,6 +236,20 @@
                                         echo "<td><h4 style='color : rgb(255,255,51,0.724);'>의심</h4></td>";
                                     }
                                     if($result[9] == -1) {
+                                        echo "<td><h4 style='color : rgb(255,51,51,0.724);'>위험</h4></td>";
+                                    }
+                                ?>
+                            </tr>
+                            <tr>
+                                <td><h4>트래픽 확인에 따른 검사결과</h4></td>
+                                <?php
+                                    if($result[10] == 1){
+                                        echo "<td><h4 style='color : rgb(51,255,51,0.724);'>안전</h4></td>";
+                                    }
+                                    if($result[10] == 0){
+                                        echo "<td><h4 style='color : rgb(255,255,51,0.724);'>의심</h4></td>";
+                                    }
+                                    if($result[10] == -1) {
                                         echo "<td><h4 style='color : rgb(255,51,51,0.724);'>위험</h4></td>";
                                     }
                                 ?>
