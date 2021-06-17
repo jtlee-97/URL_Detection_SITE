@@ -17,7 +17,7 @@
                 border-right : 1px solid #444444;
             }
             .th_right {
-                text-align: left;
+                text-align: center;
                 border-left : 1px solid #444444;
             }
             .th_right_id {
@@ -32,6 +32,7 @@
                 width : 100%;
             }
             .inputs {
+                width: 70%;
                 border-top: none;
                 border-right: none;
                 border-left: none;
@@ -39,6 +40,7 @@
             }
             .areas {
                 height: 80%;
+                width: 40%;
                 margin: 20px;
                 color: white;
                 background-color : rgb(50, 50, 60, 0.425);
@@ -71,17 +73,10 @@
                     return;
                 }
 
-                if (!document.member_form.email1.value)
+                if (!document.member_form.email.value)
                 {
                     alert("이메일 주소를 입력하세요!");    
                     document.member_form.email1.focus();
-                    return;
-                }
-
-                if (!document.member_form.email2.value)
-                {
-                    alert("이메일 주소를 입력하세요!");    
-                    document.member_form.email2.focus();
                     return;
                 }
 
@@ -127,7 +122,7 @@
 
                             <table class="tables">
                                 <th class="th_left" width="200"><h4 style='color: rgba(220, 220, 220, 0.766); text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>아 이 디</h4></td>
-                                <th class="th_right_id" style='font-family: "Sunflower"; text-align: left; padding-left:30px;'><?=$userid?></th>
+                                <th class="th_right_id" style='font-family: "Sunflower"; text-align: center;'><?=$userid?></th>
                             </table>
 
                             <table class="tabless">
@@ -140,10 +135,7 @@
                             </table>
                             <table class="tabless">
                                 <th class="th_left" width="200"><h4 style='color: rgba(220, 220, 220, 0.766); text-align:center; font-family: "Sunflower";text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;'>이 메 일</h4></td>
-                                <th class="th_right" style='font-family: "Sunflower";'> <input class="inputs" type="text" name="email1" style="color:wheat;">
-                                        @
-                                        <input class="inputs" type="text" name="email2" style="color:wheat;">
-                                </th>
+                                <th class="th_right" style='font-family: "Sunflower";'> <input class="inputs" type="text" name="email" style="color:wheat;"></th>
                             </table>
                         </form>
                         <div class="areas2">

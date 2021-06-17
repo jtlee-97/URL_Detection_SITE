@@ -5,13 +5,30 @@
 		<link rel="stylesheet" type="text/css" href="./css/board.css">
 		<style>
 			.area_view {
+				width : 80%;
 				height: 80%;
 				margin: 20px;
-				border: 3px solid #444444;
-				border-color: gray;
-				border-radius: 2em;
+				border-top: 3px solid #444444;
+				border-color : rgba(209, 208, 208, 0.147);
+                
 				color: #fff;
+				margin-left : auto; 
+                margin-right : auto;
 			}	
+			.area_view_content {
+				width: 70%;
+				margin: 20px;
+				border: 3px solid #444444;
+				border-color : rgba(209, 208, 208, 0.08);
+                border-radius : 10px;
+				color: #fff;
+				margin-left : auto; 
+                margin-right : auto;
+				margin-top : 30px;
+			}	
+			.area_view_content li{
+				text-align : left;
+			}
 			li {
 				list-style : none;
 			}
@@ -33,7 +50,7 @@
 		<section>
 			<div class="area">
 					<div class="area_area">
-						<h3>공지 사항 확인</h3>
+						<h2 style='color : rgba(161, 202, 67, 0.664); text-align:center;'>공지 사항 확인</h2>
 			<?php
 				$num  = $_GET["num"];
 				$page  = $_GET["page"];
@@ -53,19 +70,19 @@
 				$content = str_replace("\n", "<br>", $content);
 
 				$new_hit = $hit + 1;
-				$sql = "update board set hit=$new_hit where num=$num";   
+				$sql = "update notice set hit=$new_hit where num=$num";   
 				mysqli_query($con, $sql);
 			?>		
 					<div class="area_view">
 						<ul id="view_content">
-							<li>
+							<li style='font-family: "Sunflower", sans-serif; font-size: 30px;'>
 								<span class="col1"><b>제목 :</b> <?=$subject?></span>
 							</li>
-							<li>
+							<li style='font-family: "Sunflower", sans-serif; font-size: 25px;'>
 								<span class="col2"><b>작성자 :</b> <?=$id?><b>&nbsp;&nbsp;&nbsp;&nbsp;작성날짜 :</b> <?=$regist_day?></span>
 							</li>
-							<div class="area_view">
-								<li>
+							<div class="area_view_content">
+								<li style='font-family: "Sunflower", sans-serif; font-size: 25px;'>
 									<?=$content?>
 								</li>		
 							</div>

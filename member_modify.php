@@ -2,10 +2,7 @@
     $id = $_POST["id"];
 
     $pass = $_POST["pass"];
-    $email1  = $_POST["email1"];
-    $email2  = $_POST["email2"];
-
-    $email = $email1."@".$email2;
+    $email  = $_POST["email"];
           
     $con = mysqli_connect("localhost", "user1", "12345", "sample");
     $sql = "update members set pass='$pass', email='$email'";

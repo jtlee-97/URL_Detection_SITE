@@ -1,0 +1,150 @@
+html, body {
+	height: 100%;
+  }
+
+.login_content {
+	height: 400px;
+	width: 60%;
+}
+
+.wrapifout {
+	height: 100%;
+	width: 65%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: gray;
+}
+
+.wrapifin {
+	height: 500px;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: wheat;
+}
+
+.login {
+	overflow: hidden;
+	width: 25%;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 40px 30px 30px 30px;
+	border-radius: 10px;
+	display: inline-block;
+	border: 3px solid rgb(0, 0, 0, 0);
+    border-color: rgb(0, 0, 0, 0);
+    border-radius: 2em;
+    color: #fff;
+}
+
+.login > input {
+	font-family: "Asap", sans-serif;
+	display: block;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background: black;
+	color: wheat;
+	width: 100%;
+	border: 3px solid whitesmoke;
+	border-color: whitesmoke;
+	padding: 10px 10px;
+	margin: 15px -10px;
+}
+
+.login > input:hover {
+	background-color: rgba(255, 255, 255, 0);
+	box-shadow: 0px 15px 20px rgba(46, 89, 229, 0.521);
+	transform: translateY(-7px);
+}
+
+.buttoniflogin {
+	width: 140px;
+	height: 45px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #fff;
+	background-color: rgba(116, 250, 99, 0.541);
+	border: 2px solid #444444;
+	border-radius: 30px;
+	border-color: rgba(256, 256, 256, 0.447);
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+  
+.buttoniflogin:hover {
+	background-color: #2EE59D;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+}
+
+.signUp {
+	overflow: hidden;
+	width: 25%;
+	height: 100%;
+	margin-left: 100px;
+	background-color: rgb(0, 0, 0, 0);
+	padding: 40px 30px 30px 30px;
+	border-radius: 10px;
+	display: inline-block;
+	border: 3px solid rgb(0, 0, 0, 0);
+    border-color: rgb(0, 0, 0, 0);
+    border-radius: 2em;
+    color: #fff;
+}
+
+.signUp > input {
+	font-family: "Asap", sans-serif;
+	display: block;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background: black;
+	color: wheat;
+	width: 100%;
+	border: 3px solid whitesmoke;
+	border-color: whitesmoke;
+	padding: 10px 10px;
+	margin: 15px -10px;
+}
+
+.signUp > input:hover {
+	background-color: rgba(255, 255, 255, 0);
+	box-shadow: 0px 15px 20px rgba(46, 89, 229, 0.521);
+	transform: translateY(-7px);
+}
+
+.buttonifsignup {
+	width: 140px;
+	height: 45px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #fff;
+	background-color: rgba(229, 67, 46, 0.347);
+	border: 2px solid #444444;
+	border-radius: 30px;
+	border-color: rgba(256, 256, 256, 0.447);
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+  
+.buttonifsignup:hover {
+	background-color: #e52e2e;
+	box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+}

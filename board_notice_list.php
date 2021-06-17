@@ -45,7 +45,7 @@
         <section>
             <div class="area">
                 <div class="area_area">
-                    <h3 style='color : rgba(161, 202, 67, 0.664); text-align:center;'>공지 사항</h3>
+                    <h2 style='color : rgba(161, 202, 67, 0.664); text-align:center;'>공지 사항</h2>
                     <p></p>
                     <p></p>
                     <table style='border: 3px solid #444444; border-color: rgba(200, 200, 200, 0.7); border-radius : 10px;'>
@@ -152,10 +152,7 @@
                         else 
                             echo "<li>&nbsp;</li>";
                     ?>
-                                </ul> <!-- page -->	   
-
-                                <!--버튼 만들기 (목록 / 글쓰긴데 안해도 될듯) : 한다면 뒤로가기 정도?-->
-                                
+                                </ul>                                 
                 </div>
             </div>
         </section>
