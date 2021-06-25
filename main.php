@@ -11,7 +11,7 @@
                 font-family: 'Gugi', cursive;
             }
             p {
-                font-family: 'Gugi', cursive;
+                font-family : 'Nanum Gothic Coding', monospace;
             }
             .tables {
                 border : 3px solid #444444;
@@ -22,6 +22,10 @@
                 margin-top : 20px;
                 width : 80%; 
                 text-align : left;
+            }
+            .tables li{
+                text-align : left;
+                font-size : 17px;
             }
         </style>
     </head>
@@ -39,12 +43,12 @@
                     <p></p>
                     <table class='tables'>
                         <tr style='text-align:center;'>
-                            <td colspan='2'><h3 style='color : rgba(192, 202, 165, 0.664); border-bottom: thick double rgba(209, 208, 208, 0.247);'>홈페이지 사용방법</h3></td>
+                            <td colspan='2'><h3 style='color : rgba(192, 202, 165, 0.864); border-bottom: thick double rgba(209, 208, 208, 0.247);'>홈페이지 사용방법</h3></td>
                             <!--<td>1</td>-->
                         </tr>
                         <colgroup> <!--table 너비를 조정-->
-                                <col width="30%" />
-                                <col width="70%" />
+                                <col width="25%" />
+                                <col width="75%" />
                         </colgroup>
                         <tr>
                             <td style='font-family: "Shadows Into Light", cursive; font-size: 40px; text-align: center; border-right: 3px solid #444444; border-color: rgba(209, 208, 208, 0.247);'>HOME</td>
@@ -57,9 +61,9 @@
                         <tr>
                             <td style='border-right: 3px solid #444444; border-color: rgba(209, 208, 208, 0.247);'></td>
                             <td style='color:rgba(256, 256, 256, 0.747);'>
-                                (1) 검색창에 검사하고 싶은 URL을 입력하세요.<br/>
-                                (2) 우측의 검사하기 버튼을 누르거나 키보드의 ENTER 키를 통해 검사결과를 확인하세요.<br/>
-                                (3) 검사 창에서 전반적인 검사 결과와 검사에 사용된 상세 검사요소들에 대한 결과를 확인해보세요.
+                                <li> 검색창에 검사하고 싶은 URL을 입력하세요.</li>
+                                <li> 우측의 검사하기 버튼을 누르거나 키보드의 ENTER 키를 통해 검사결과를 확인하세요.</li>
+                                <li> 검사 창에서 전반적인 검사 결과와 검사에 사용된 상세 검사요소들에 대한 결과를 확인해보세요.</li>
                             </td>
                         </tr>
                         <tr>
@@ -69,10 +73,10 @@
                         <tr>
                             <td style='border-right: 3px solid #444444; border-color: rgba(209, 208, 208, 0.247);'></td>
                             <td style='color:rgba(256, 256, 256, 0.747);'>
-                                (1) 공지사항 / 신고 게시판 / 신고하기 총 3개로 구성되어 있습니다.<br/>
-                                (2) 공지사항에서는 개발자 및 관리자의 홈페이지 관련 공지를 확인하실 수 있습니다.<br/>
-                                (3) 신고 게시판에서는 다른 유저들이 URL이나 기타 홈페이지에 대한 버그에 대한 의견을 주실 수 있는 공간입니다.<br/>
-                                (4) 신고하기는 직접 본인이 신고 게시판에 올리고 싶은 글을 올릴 수 있습니다. 로그인 후 사용해주세요.
+                                <li> 공지사항 / 신고 게시판 / 신고하기 총 3개로 구성되어 있습니다.</li>
+                                <li> 공지사항에서는 개발자 및 관리자의 홈페이지 관련 공지를 확인하실 수 있습니다.</li>
+                                <li> 신고 게시판에서는 다른 유저들이 URL이나 기타 홈페이지에 대한 버그에 대한 의견을 주실 수 있습니다.</li>
+                                <li> 신고하기는 직접 본인이 신고 게시판에 올리고 싶은 글을 올릴 수 있습니다. 로그인 후 사용해주세요.</li>
                             </td>
                         </tr>
                         <tr>
@@ -82,9 +86,9 @@
                         <tr>
                             <td style='border-right: 3px solid #444444; border-color: rgba(209, 208, 208, 0.247);'></td>
                             <td style='color:rgba(256, 256, 256, 0.747);'>
-                                (1) 내 정보를 확인할 수 있는 마이페이지에서는 로그인 / 회원가입 / 정보수정이 가능합니다.<br/>
-                                (2) 로그인을 하지 않은 초기 화면은 로그인과 회원가입을 할 수 있는 화면이 나옵니다.<br/>
-                                (3) 로그인을 하면 개인정보를 수정할 수 있는 화면이 나오며, 수정을 진행할 수 있습니다.<br/>
+                                <li> 내 정보를 확인할 수 있는 마이페이지에서는 로그인 / 회원가입 / 정보수정이 가능합니다.</li>
+                                <li> 로그인을 하지 않은 초기 화면은 로그인과 회원가입을 할 수 있는 화면이 나옵니다.</li>
+                                <li> 로그인을 하면 개인정보를 수정할 수 있는 화면이 나오며, 수정을 진행할 수 있습니다.</li>
                             </td>
                         </tr>
                     </table>

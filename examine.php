@@ -19,7 +19,7 @@
         </header>
         
         <section>
-            <div class = "area">
+            <div class = "area" style="height: 650px;">
                 <div class = "area_area">
                     <!-- Main Contents 시작 -->
                     <h2 style='color : rgba(161, 202, 67, 0.664); text-align:center; font-size:60px;'>악성 URL 검색하기</h2>
@@ -29,7 +29,7 @@
                         <div class="container">
                             <input placeholder='Search...' type="text" name="char_url">
                             <p>&nbsp;&nbsp;&nbsp;</p>
-                            <button onclick="location.href='result.php'">진단결과 확인</button>
+                            <button onclick="location.href='result.php'">Enter</button>
                         </div>
                     </form>
                     <!-- Main Contents 종료 -->

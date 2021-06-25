@@ -8,13 +8,11 @@
             @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
             table {
                 width: 100%;
-                /*border: 1px solid #444444;
-                border-color: white;*/
             }
             li {
-                font-family : 'Nanum Pen Script', cursive;
+                font-family : 'Nanum Gothic Coding', monospace;
                 text-align : center;
-                font-size : 25px;
+                font-size : 20px;
                 text-shadow: 2px 2px 2px gray;
             }
             h3{
@@ -52,7 +50,8 @@
                         <td>
                             <ul id="footer_right011">
                                 <li>[프로젝트 명]</li>
-                                <li>PHP와 머신러닝을 이용한<br> 악성 URL 검출 사이트</li>
+                                <li>PHP와 머신러닝을 이용한</li>
+                                <li>악성 URL 검출 사이트</li>
                             </ul>
                         </td>
                         <td>
@@ -64,7 +63,7 @@
                         </td>
                     </tr>
                 </table>
-                <h2>2021학년도 1학기 PHP WEB 프로그래밍</h2>
+                <h2><br>2021학년도 1학기 PHP WEB 프로그래밍</h2>
             </div>
         </div>
     </body>
